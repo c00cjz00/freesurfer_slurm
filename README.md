@@ -1,5 +1,16 @@
 # freesurfer_slurm
 
+## STEP1
+```
+git clone https://github.com/c00cjz00/freesurfer_slurm.git
+```
+
+## STEP2
+1. cd freesurfer_slurm
+2. use notebook to open notebook_7.1.1.ipynb
+3. edit SUBJECTS_DIR, and inputFile in every cell
+4. submit job
+
 ## EXAMPLE
 
 ```
