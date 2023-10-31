@@ -1,15 +1,15 @@
 # freesurfer_slurm
 
-## STEP1
+## STEP 1
 ```
 git clone https://github.com/c00cjz00/freesurfer_slurm.git
 ```
 
-## STEP2
+## STEP 2 (for slurm job)
 1. cd freesurfer_slurm
-2. use notebook to open notebook_7.1.1.ipynb
+2. use notebook to open File slurm_7.1.1.ipynb
 3. edit SUBJECTS_DIR, and inputFile in every cell
-4. submit job
+4. click run button, then submit slurm job
 
 ## EXAMPLE
 
@@ -28,3 +28,11 @@ scancel -n ${saveFolder} && rm -rf ${SUBJECTS_DIR}/${saveFolder} && rm -f ${SUBJ
 sbatch -J ${saveFolder} --export=SUBJECTS_DIR=${SUBJECTS_DIR},inputFile=${inputFile},IMAGE=${IMAGE} slurm_7.1.1.sh
 
 ```
+
+
+## STEP 3 (for interactive job in notebook)
+1. cd freesurfer_slurm
+2. use notebook to open File notebook_7.1.1.ipynb
+3. edit SUBJECTS_DIR, and inputFile in secondary cell
+4. click run button, then exectute job
+
